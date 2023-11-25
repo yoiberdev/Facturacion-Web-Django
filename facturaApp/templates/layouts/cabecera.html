@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqui Todo Sale</title>
+    <link rel="stylesheet" type="text/css" href="{% static '/styles/mainstyle.css' %}">
+    <link rel="icon" href="{% static 'icon.svg' %}">
+    
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="#" class="nav-link">
+                    <img src="{% static 'iconos.svg' %}" alt="">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="{% url 'index' %}" class="nav-menu-link nav-linke">INICIO</a></li>
+                <li class="nav-menu-item"><a href="{% url 'ventas' %}" class="nav-menu-link nav-linke">VENTAS</a></li>
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-linke">UBICACION</a></li>
+            </ul>
+        </nav>
+    </header>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

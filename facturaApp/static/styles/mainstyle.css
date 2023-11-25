@@ -1,0 +1,256 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1578916171728-46686eac8d58?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    padding: 0;
+    background-color: #f4f4f4;
+    height: 100vh;
+}
+
+.fondo-factura{
+    margin: 0;
+    background-image: url("factura.png"); /* esta imagen existe? */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #0e0f0e;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+}
+
+form {
+    padding: 20px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #fbfbfb;
+}
+
+.menu {
+    width: 900px;
+    margin: 0 auto;
+}
+
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-linke{
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.logo {
+    padding: 0 40px;
+    margin-left: 100px;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.nav-menu-item  {
+    font-size: 18px;
+    margin: 0 20px;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+
+label {
+    color: #000000;
+    font-size: 20px;
+}
+
+
+#formularioContainer {
+    width: 820px;
+    margin: 20px auto;
+    background: transparent;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-image-slice: 1;
+    border-radius: 10px;
+    text-align: left;
+    color: #fff;
+    
+}
+
+#facturacionForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.logo img{
+    height: 100px;
+    width: 200px;
+    border-radius: 60px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s;
+}
+
+#facturacionForm button:hover {
+    background-color: #45a049;
+    
+}
+.logo1 img{
+    height: 80px;
+    width: 200px;
+    border-radius: 60px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s;
+    text-align: left;
+}
+h2 {
+    font-family: "Segoe UI";
+    font-size: 36px;
+    font: oblique bold 120% cursive;
+}
+h1 {
+    font-size: 36px;
+    color: #fff;
+    margin: auto;
+}
+.fact {
+    width: auto;
+}
+
+.container {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    
+}
+
+#almacenar input{
+    display: inline-block;
+    width: 33%;
+    margin-left: 0;
+    border-radius: 20px;
+}
+
+#almacenar button{
+    display: inline;
+    width: 24%;
+    margin-left: 8px;
+    border-radius: 20px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+}
+
+.lineasep{
+    border-bottom: 1px solid #ddd;
+    padding-top: 10px;  
+}
+.footer {
+    margin-top: 10px;
+    text-align: center;
+    font-style: italic;
+    color: #555;
+    font-size: 12px;
+}
+.card{
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.card h1{
+    color: black;
+    display: inline-block;
+    padding-right: 25px;
+}
+
+.card a{
+    color: rgb(14, 11, 11);
+    text-decoration: none;
+}
+
+.card a:hover{
+    color:rgb(28, 145, 106);
+}

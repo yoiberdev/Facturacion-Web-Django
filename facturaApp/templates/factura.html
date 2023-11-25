@@ -1,0 +1,60 @@
+{% extends 'layouts/cabecera.html' %}
+
+{% load static %}
+{% block content %}
+<div class="fondo-factura">
+  <div class="container">
+    <h1>Super Market</h1>
+
+    <table>
+        <tr>
+            <th colspan="4">Ticket de Compra</th>
+        </tr>
+        <tr>
+            <td colspan="4">Sucursal: Puente Nuevo Av.Jupiter 3050</td>
+        </tr>
+        <tr>
+            <td colspan="4">Fecha: {{ venta.fecha }}</td>
+        </tr>
+        <tr>
+          <td>Cliente:</td>
+          <td>{{cliente.cliente}}</td>
+      </tr>
+      <tr>
+        <td>ID : </td>
+        <td>{{cliente.id}}</td>
+    </tr>
+      <tr>
+        <td>Direccion:</td>
+        <td>{{cliente.direccion}}</td>
+      </tr>
+      <tr><td colspan="4" class="lineasep"></td></tr>
+      <tr>
+        <td>Cant.</td>
+        <td>Descripción</td>
+        <td>Precio</td>
+        <td>Subtotal</td>
+      </tr>
+          {%for producto in productos%}
+        <tr>
+          <td>{{producto.cantidad}}</td>
+          <td>{{producto.producto}}</td>
+          <td>{{producto.precio}}</td>
+          <td>{{subtotal[productos.index(producto)]}}</td>
+        </tr>
+        {% endfor %}
+        <tr><td colspan="4" class="lineasep"></td></tr>
+        <tr>
+            <td colspan="4">Total: {{total}}</td>
+        </tr>
+    </table>
+
+    <!-- Código QR -->
+    <img src="{% static 'qr.png' %}" alt="Código QR">
+
+    <!-- Fecha actual -->
+    <div class="footer">Gracias por tu compra. ¡Vuelve pronto!</div>
+</div>
+  
+{% endblock %}
+

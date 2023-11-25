@@ -1,0 +1,24 @@
+{% extends 'layouts/cabecera.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div id="formularioContainer"> <!-- Contenedor del formulario -->
+    <form id="facturacionForm" method="POST">
+        <div class="fact">
+            <img src="https://cdn.discordapp.com/attachments/1079264155485356033/1177064350717071360/cooltext447757159637841.png?ex=6571259a&is=655eb09a&hm=f9f6319feeebec4d6d1112c8c2838654923b9e13711f9006fd69c22e65a787cd&" alt="">
+        </div>
+        <br><br>
+        {% csrf_token %}
+        {{form1}}
+        <button type="button" id="agregar">Agregar producto</button>
+        <div id="almacenar"></div>
+        <br>
+        <button>Enviar</button>
+        <input type="hidden" id="contador" name="contador">
+    </form>
+    
+</div>
+<script src="{% static '/js/scripts.js' %}"></script>   
+{% endblock %}
